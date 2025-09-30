@@ -1,19 +1,23 @@
 {
-  "name": "mist",
+  "name": "portal2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Portal2 web app with Azure Functions and Postgres backend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "func start",
+    "dev": "func start --cors *"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
-    "@azure/msal-node": "^3.7.4",
-    "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "jwks-rsa": "^3.2.0"
-  }
+    "pg": "^8.11.1",
+    "jsonwebtoken": "^9.0.0",
+    "jwks-rsa": "^3.0.0",
+    "msal": "^2.42.0"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
 }
+
